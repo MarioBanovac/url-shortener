@@ -1,9 +1,13 @@
 import express from 'express'
+import url from './apps/url/domain/index.js'
 
 const app = express();
 
+app.use(express.json())
 
-app.get('/',(req, res) =>  res.send('Hello World'));
+
+app.use('/', url)
+
 
 
 const PORT = 9999;
