@@ -15,4 +15,7 @@ plugins:
   - '@typescript-eslint'
   - react
   - node
+settings: 
+  react:
+    version: 'detect'
 rules: {}
